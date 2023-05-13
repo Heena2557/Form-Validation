@@ -45,7 +45,7 @@ function mailCheck()
 function phoneCheck()
 {
     const phone=document.getElementById("phone").value;
-    if(phone.length<10 || phone=='123456789')
+    if(phone.length<10 || phone=='123456789' || phone.length>10)
     {
         alert("Invalid Phone Number Detected!!");
         return false;
